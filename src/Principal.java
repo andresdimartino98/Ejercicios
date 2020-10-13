@@ -1,13 +1,23 @@
 
-//ejercicio 1
+
 import java.util.Scanner;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//aca voy a poner mis ejercicios para subir a git
-		
+		/* converti cada ejercicio en una funcion diferente
+		 * desde el main solo invoco a la funcion que quiero
+		 * el try catch podria ir una sola vez en el main
+		 * o en cada funcion en particular
+		 */
+		ejerciciouno();
+		ejerciciodos();
+		ejercicioseis();
+	}
+	
+	//ejercicio 1
+	private static void ejerciciouno()
+	{
 		Scanner sc = new Scanner (System.in);
 		int numeroA;
 		int numeroB;
@@ -31,18 +41,12 @@ public class Principal {
 		{
 			System.out.println("ingreso un numero inesperado ");
 		}
-			}
-	
+			
 }
 		
-
-
 //ejercicio dos
 
-public class ejerciciodos {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private static void ejerciciodos() {
 
 		Scanner sc = new Scanner (System.in);
 		
@@ -60,7 +64,7 @@ public class ejerciciodos {
 		if ( numero1 < numero2 ) {
 	  System.out.println("el nuemero mayor es:" + numero2);
 		}
-		else{
+		else{//revisar esta parte, si es igual muestra que el numero 1 es mayor
 		
 			System.out.println("el nuemero mayor es:" + numero1);
 		
@@ -71,19 +75,14 @@ public class ejerciciodos {
 		}
 	}
 
-}
-		
-		
+
+			
 		
 		//ejercicio seis
 
-import java.util.Scanner;
+	private static void  ejercicioseis() {
 
-public class ejercicioseis2 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		{
 		Scanner sc = new Scanner (System.in);
 		short mes;
 		
@@ -129,7 +128,7 @@ public class ejercicioseis2 {
 	}
 
 }
-}
+
 		
 		
 
