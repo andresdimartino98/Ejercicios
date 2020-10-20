@@ -10,10 +10,24 @@ public class Principal {
 		 * el try catch podria ir una sola vez en el main
 		 * o en cada funcion en particular
 		 */
+		boolean continuar = true;
+	try {
+		do 
+		{
+			
+		
 		ejerciciouno();
+		System.out.println("presione 1 para continuar");
+		int valor = sc.nextInt ();
+		continuar = (valor = 1);
+		
+	}while(contionuar)
 		ejerciciodos();
 		ejercicioseis();
-	}
+		ejerciciosiete();
+		ejercicionueve();
+		
+	}catch (Excepcion ex){
 	
 	//ejercicio 1
 	private static void ejerciciouno()
@@ -126,12 +140,61 @@ public class Principal {
 		}
 
 	}
+	
 
+
+
+		
+		
+
+//ejercicio 7
+	private static void ejerciciosiete()
+{
+		int i ;
+//	for(i=0; i<200; i++)
+//		
+//	{
+//		if (( i % 2)== 0)
+//		System.out.println(i);
+//	}
+//	
+//}
+		
+for(i=0; i<200; i=i+2)
+		
+	{
+		System.out.println(i);
+	}
 }
-
 		
+	}
+	
+//ejercicio 9
+	private static void ejercicionueve()
+	
+	Scanner sc = new Scanner (System.in);
+	System.out.println("ingrese varions numeros enteros y un numero negativo para finalizar");
+	
+	long acumulador = 0;
+	int numA ;
+	int maximo = 0 ; 
+	numA = sc.nextInt();
+	maximo =numA;
+	
+	while (numA >= 0)
+	{
+		acumulador =  acumulador + numA;
 		
-
-
-
+		if (numA > maximo){
+			maximo =numA ;
+		}
+		
+		numA = sc.nextInt();
+	}
+	System.out.println("la suma es :" +  acumulador );
+	System.out.println("el maximo es :" + maximo );
+	
+		
+}
+	}
 
