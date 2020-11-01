@@ -11,23 +11,26 @@ public class Principal {
 		 * o en cada funcion en particular
 		 */
 		boolean continuar = true;
-	try {
-		do 
-		{
-			
-		
-		ejerciciouno();
+		int valor;
+		try {
+	
+		//do 
+	    //ejerciciouno();
 		System.out.println("presione 1 para continuar");
 		int valor = sc.nextInt ();
 		continuar = (valor = 1);
 		
-	}while(contionuar)
-		ejerciciodos();
-		ejercicioseis();
-		ejerciciosiete();
+	}while(continuar)
+		//ejerciciouno();
+		//ejerciciodos();
+		//ejercicioseis();
+		//ejerciciosiete();
 		ejercicionueve();
+	//	ejerciciodiez();
 		
-	}catch (Excepcion ex){
+		} catch (Exception ex)
+		
+	}
 	
 	//ejercicio 1
 	private static void ejerciciouno()
@@ -167,10 +170,10 @@ for(i=0; i<200; i=i+2)
 	}
 }
 		
-	}
+	
 	
 //ejercicio 9
-	private static void ejercicionueve()
+	private static void ejercicionueve(){
 	
 	Scanner sc = new Scanner (System.in);
 	System.out.println("ingrese varions numeros enteros y un numero negativo para finalizar");
@@ -191,10 +194,42 @@ for(i=0; i<200; i=i+2)
 		
 		numA = sc.nextInt();
 	}
+	{
 	System.out.println("la suma es :" +  acumulador );
 	System.out.println("el maximo es :" + maximo );
 	
-		
-}
 	}
+}
+	
+
+//ejercicio diez
+
+private static void ejerciciodiez(){
+
+Scanner sc = new Scanner (System.in);
+System.out.println("ingrese varions numeros enteros y un numero negativo para finalizar");
+
+long acumulador = 0;
+int numA ;
+int minimo = 0 ; 
+numA = sc.nextInt();
+minimo =numA;
+
+while (numA >= 0)
+{
+	acumulador =  acumulador + numA;
+	
+	if (numA < minimo){
+		minimo =numA ;
+	}
+	
+	numA = sc.nextInt();
+}
+{
+System.out.println("la suma es :" +  acumulador );
+System.out.println("el minimo es :" + minimo );
+}
+}
+}
+
 
