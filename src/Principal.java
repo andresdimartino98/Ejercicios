@@ -7,28 +7,25 @@ public class Principal {
 	public static void main(String[] args) {
 		/* converti cada ejercicio en una funcion diferente
 		 * desde el main solo invoco a la funcion que quiero
-		 * el try catch podria ir una sola vez en el main
+		 * el try catch podria ir una sola vez en el main 
 		 * o en cada funcion en particular
 		 */
-		boolean continuar = true;
-		int valor;
-		try {
-	
-		//do 
-	    //ejerciciouno();
-		System.out.println("presione 1 para continuar");
-		int valor = sc.nextInt ();
-		continuar = (valor = 1);
-		
-	}while(continuar)
+
 		//ejerciciouno();
 		//ejerciciodos();
 		//ejercicioseis();
 		//ejerciciosiete();
-		ejercicionueve();
-	//	ejerciciodiez();
+    	//	ejercicioocho();
+		//ejercicionueve();
+	
+		//ejerciciodiez();
 		
-		} catch (Exception ex)
+		//ejerciciocuatro();
+		ejerciciocuatro1();
+
+
+		
+	
 		
 	}
 	
@@ -154,14 +151,7 @@ public class Principal {
 	private static void ejerciciosiete()
 {
 		int i ;
-//	for(i=0; i<200; i++)
-//		
-//	{
-//		if (( i % 2)== 0)
-//		System.out.println(i);
-//	}
-//	
-//}
+
 		
 for(i=0; i<200; i=i+2)
 		
@@ -170,6 +160,27 @@ for(i=0; i<200; i=i+2)
 	}
 }
 		
+	
+	//ejercicio 8
+	
+	private static void ejercicioocho()
+{
+		int i ;
+		int p ;
+
+		
+for(i=0; i<200; i=i+2)
+		
+	{
+		System.out.println(i);
+		if (( i % 4)== 0){
+			System.out.println("numeros multiplos de 4 :" + i);
+			}
+		}
+	}
+
+
+
 	
 	
 //ejercicio 9
@@ -230,6 +241,161 @@ System.out.println("la suma es :" +  acumulador );
 System.out.println("el minimo es :" + minimo );
 }
 }
+
+
+
+
+//ejercicio cuatro
+
+private static void ejerciciocuatro(){
+	int nota1;	
+	int nota2;
+	int nota3;
+	float promedio;
+	
+	boolean continuar = false;
+	
+	Scanner sc = new Scanner (System.in);
+	try{
+		
+		do
+		{
+    continuar =false;
+	System.out.println("ingrese 3 notas");
+	
+	nota1=sc.nextInt();
+	nota2=sc.nextInt();
+	nota3=sc.nextInt();
+	
+	if( (nota1<= 10)&&(nota2<= 10) &&(nota3<= 10)&&(nota1>= 0)&&(nota2>= 0)&&(nota3>= 0)){
+		
+	float promedio =  calcularPromedio (int nota1,int  nota2 ,int nota3);
+	
+
+	}
+	
+	
+
+	if ((promedio >=4)&&(nota1>=4)&&(nota2>=4)&&(nota3>=4)){
+		
+		System.out.println("el alumno esta aprobado");
+	}
+	
+		else
+			
+		{
+			System.out.println ("el alumno no aprobo");
+			 continuar =true;
+		}
+		
+	
+	
+
+		}while (continuar);
+	
+		
+	
+	
+	}
+	catch (Exception ex)
+	
+	
+	{
+		System.out.println("ingreso un valor inesperado");
+		
+	}
+		
+	
+	private float 	 calcularPromedio (int nota1,int nota2 ,int nota3){
+	
+		
+		float promedio = nota1 +nota2 + nota3;
+		promedio= promedio /3;
+		//return promedio ;
+		System.out.println ("el promedio es :" + promedio);
+		
+		
+	}
+	
+	//ejerciciocuatro1
+	private static void ejerciciocuatro1(){
+		int nota1;	
+		int nota2;
+		int nota3;
+	    float prmedio;
+		
+		Scanner sc = new Scanner (System.in);
+		try{
+			
+			do
+			{
+	   
+		System.out.println("ingrese 3 notas");
+		
+		nota1=sc.nextInt();
+		nota2=sc.nextInt();
+		nota3=sc.nextInt();
+		
+		if( (nota1<= 10)&&(nota2<= 10) &&(nota3<= 10)&&(nota1>= 0)&&(nota2>= 0)&&(nota3>= 0)){
+			
+	 promedio =  nota1 +nota2 + nota3;
+	 promedio= promedio /3;
+		
+		System.out.println ("el promedio es :" + promedio);
+		
+
+		}
+		
+		
+
+		if ((promedio >=4)&&(nota1>=4)&&(nota2>=4)&&(nota3>=4)){
+			
+			System.out.println("el alumno esta aprobado");
+		}
+		
+			else
+				
+			{
+				System.out.println ("el alumno no aprobo");
+				 continuar =true;
+			}
+			
+		
+		
+
+			}while (continuar);
+		
+			
+		
+		
+		}
+		catch (Exception ex)
+		
+		
+		{
+			System.out.println("ingreso un valor inesperado");
+			
+		}
+			
+		
+	
+	
+	
+	
+	
+	
+	
 }
+
+//private static float calcularPromedio(int nota1, int nota2, int nota3) {
+	// TODO Auto-generated method stub
+//	return 0;
+//}
+//}	
+	
+	
+
+
+
 
 
